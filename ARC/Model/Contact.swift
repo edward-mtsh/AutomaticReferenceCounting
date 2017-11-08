@@ -8,6 +8,20 @@
 
 import UIKit
 
-class Contact: NSObject {
-
-}
+class Contact
+    {
+    let name:String
+    let number:String
+    
+    init(name:String, number:String)
+        {
+        self.name = name
+        self.number = number
+        print("\(self.name) uses this number \(self.number)")
+        }
+    
+    deinit
+        {
+        print("We lost our contact")
+        }
+    }
